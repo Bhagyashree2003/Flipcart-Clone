@@ -1,0 +1,22 @@
+.txt-flex-center{
+    display: flex;
+justify-content: center;
+align-items: center;
+}
+.btn{
+    height: 28px;
+    font-weight: bold;
+    padding: 1px 5px;
+    color: azure;
+    background: var(--main-bg-color);
+    border: 2px solid white;
+    border-radius: 7px;
+    cursor: pointer;
+}
+.m1{
+    padding: 10px 3px;
+}
+.txt-center{
+text-align: center;
+font-size: 13px;
+}

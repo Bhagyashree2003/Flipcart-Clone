@@ -1,0 +1,157 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@1,300&display=swap');
+
+:root {
+    --main-bg-color: cadetblue;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+header {
+
+    background: var(--main-bg-color);
+    font-family: 'Poppins', sans-serif;
+}
+
+nav {
+    display: flex;
+    /* flex-direction: column; */
+    justify-content: space-between;
+}
+
+.nav-item{
+    display: flex; 
+}
+.hamburger{
+    display: none;
+}
+.logo {
+    display: flex;
+    align-items: center;
+}
+
+.logo img {
+    width: 70px;
+    padding: 0 5px;
+    height: 18px;
+}
+
+nav ul {
+    height: 7vh;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+nav ul li {
+    list-style: none;
+    margin: 0 10px;
+}
+
+nav ul li a {
+    color: azure;
+    text-decoration: none;
+    text-transform: uppercase;
+    border-radius: 3px;
+}
+nav ul li a:hover {
+    /* color: beige; */
+    font-weight: bold;
+}
+.search{
+    display: flex;
+   align-items: center;
+}
+.search input{
+    width: 20vw;
+    height: 3vh;
+    border-radius: 5px;
+    margin: 0 5px 0 10px;
+    padding: 2px 10px;
+}
+a.active,a:hover{
+    background: var(--main-bg-color);
+    transition: .5s;
+}
+
+button:hover {
+    font-weight: bold;
+}
+
+.container {
+    min-height: calc(100vh - 7vh - 7vh);
+    /* height: 86vh; */
+}
+.slider {
+    overflow: hidden;
+    margin: 5px 0;
+    
+}
+.images {
+    display: inline-flex;
+    height: 30vh;
+}
+
+.image {
+    display: inline-block;
+    margin: 0 5vw;
+    height: 30vh;
+    width: 90vw;
+    transform: translate(-100vw);
+    animation: slider 9s 5s infinite forwards;
+}
+@keyframes slider {
+    0% {
+        transform: translateX(-100vw);
+    }
+
+    25% {
+        transform: translateX(0vw);
+    }
+
+    50% {
+        transform: translateX(-100vw);
+    }
+
+    75% {
+        transform: translateX(-200vw);
+    }
+}
+.cart{
+    display: flex;  
+    /* justify-content: center; */
+    border: 1px solid black;
+    overflow-x: scroll;
+    top: 3px;
+
+}
+
+.cart h3{
+    font-family: 'Poppins', sans-serif;
+}
+.cart-item{
+    min-width: 110px;
+   margin: 3px 5px;
+
+    display: inline-flex;
+    /* justify-content: center; */
+    flex-direction: column;
+}
+.cimg{
+    width: 90px;
+    height: 110px;
+}
+/* .lines{
+    font-size: 15px;
+} */
+p{
+    font-family: 'Poppins', sans-serif;
+}
+footer {
+    height: 7vh;
+    background: var(--main-bg-color);
+    color: azure;
+    font-family: 'Poppins', sans-serif;
+}
